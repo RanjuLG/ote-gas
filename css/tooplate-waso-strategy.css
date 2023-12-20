@@ -14,6 +14,7 @@ Free Bootstrap 5 HTML Template
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
+  --orange-color:                  #FE4D2C;
   --primary-color:                #f9c10b;
   --secondary-color:              #dc3545;
   --section-bg-color:             #f5f5f5;
@@ -249,6 +250,7 @@ strong {
   z-index: 9;
   right: 0;
   left: 0;
+  background-color: var(--orange-color);
 }
 
 .navbar-brand {
