@@ -14,7 +14,7 @@ Free Bootstrap 5 HTML Template
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --orange-color:                  #FE4D2C;
+  --orange-color:                  #fea62c;
   --lightblue-color:                  #2DA3AB;
   --blue-color:                  #12283F;
   --primary-color:                #f9c10b;
@@ -278,7 +278,7 @@ strong {
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover,
 .projects-detail-page .navbar-nav .nav-link.active:hover {
-  color: var(--secondary-color);
+  color: var(--orange-color);
 }
 
 .projects-detail-page .navbar-nav .nav-link.active {
