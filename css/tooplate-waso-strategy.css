@@ -16,7 +16,7 @@ Free Bootstrap 5 HTML Template
   --white-color:                  #ffffff;
   --orange-color:                  #fea62c;
   --lightblue-color:                  #2DA3AB;
-  --blue-color:                  #12283F;
+  --blue-color:                  #12386A;
   --primary-color:                #f9c10b;
   --secondary-color:              #dc3545;
   --section-bg-color:             #f5f5f5;
@@ -116,8 +116,9 @@ button {
 }
 
 a {
-  color: var(--p-color);
+  color: var(--blue-color);
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
@@ -640,6 +641,17 @@ strong {
   padding: 7.5px 15px;
 }
 
+/*---------------------------------------
+  SECTION               
+-----------------------------------------*/
+
+.section-small-title {
+  color: var(--lightblue-color);
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-weight-semibold);
+  display: block;
+}
+
 
 /*---------------------------------------
   CONTACT INFO               
@@ -653,6 +665,10 @@ strong {
 .contact-info {
   border-radius: 20px;
   padding: 40px;
+  margin: 2%;
+  height: 600px;
+  background-color: var(--section-bg-color);
+  
 }
 
 .google-map {
@@ -668,25 +684,48 @@ strong {
 /*---------------------------------------
   CONTACT              
 -----------------------------------------*/
-.contact-container-wrap {
-  background-color: var(--orange-color);
-  padding-bottom: 120px;
-}
+/* 
 
 .contact-form {
   margin-top: 30px;
   margin-right: 30px;
 }
+*/
 
 .address{
-  color: var(--p-color);
+  color: var(--blue-color);
+  font-weight: 500;
+}
+
+.contact-container-wrap {
+  background-color: var(--orange-color);
+  padding-bottom: 120px;
+}
+
+.contact-section {
+  background: var(--white-color);
+}
+
+.contact-form {
+  background: var(--section-white-color);
+  border-radius: var(--border-radius-medium);
+  
+}
+
+.contact-form label {
+  font-weight: var(--font-weight-semibold);
+}
+
+.google-map {
+  display: block;
+  border-radius: var(--border-radius-medium);
 }
 
 
 /*---------------------------------------
   CUSTOM FORM               
 -----------------------------------------*/
-.custom-form .form-control {
+/* .custom-form .form-control {
   background: transparent;
   box-shadow: none;
   border-radius: 0;
@@ -718,6 +757,53 @@ strong {
 .custom-form button[type="submit"]:focus {
   background: var(--white-color);
   color: var(--dark-color);
+} */
+.custom-form .input-group {
+  background-color: var(--white-color);
+  border: 2px solid var(--border-color);
+  border-radius: .25rem;
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.custom-form .textarea-group label {
+  margin-top: 13px;
+}
+
+.custom-form label {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.custom-form .form-control {
+  background-color: var(--white-color);
+  box-shadow: none;
+  border: 0;
+  color: var(--p-color);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  outline: none;
+}
+
+.custom-form .form-control:hover,
+.custom-form .form-control:focus {
+  border-color: var(--secondary-color);
+}
+
+.custom-form button[type="submit"] {
+  background: var(--blue-color);
+  border: none;
+  color: var(--white-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+  transition: all 0.3s;
+  margin-bottom: 0;
+}
+
+.custom-form button[type="submit"]:hover,
+.custom-form button[type="submit"]:focus {
+  background: var(--orange-color);
+  border-color: transparent;
 }
 
 
@@ -851,10 +937,15 @@ strong {
     padding-bottom: 50px;
   }
 
-  .contact-form {
+  /* .contact-form {
     margin-right: 0;
     margin-top: 80px;
     margin-bottom: 50px;
+  } */
+
+  .custom-block,
+  .contact-form {
+    padding: 30px;
   }
 
   .contact-thumb {
