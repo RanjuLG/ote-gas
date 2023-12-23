@@ -484,7 +484,6 @@ strong {
 .carousel-control-prev-icon {
   width: 70px;
   height: 70px;
-  color: #dc3545 !important;
 }
 
 /*---------------------------------------
@@ -662,7 +661,7 @@ strong {
 
 .contact-icon {
   color: var(--primary-color);
-  font-size: var(--h4-font-size);
+  font-size: var(--h5-font-size);
 }
 
 
@@ -670,13 +669,17 @@ strong {
   CONTACT              
 -----------------------------------------*/
 .contact-container-wrap {
-  background-color: var(--primary-color);
+  background-color: var(--orange-color);
   padding-bottom: 120px;
 }
 
 .contact-form {
   margin-top: 30px;
   margin-right: 30px;
+}
+
+.address{
+  color: var(--p-color);
 }
 
 
@@ -882,11 +885,11 @@ strong {
   }
 
   h5 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .contact-icon {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .site-header p {
@@ -915,5 +918,6 @@ strong {
   .copyright-text {
     padding-bottom: 10px;
   }
+  
 }
 
