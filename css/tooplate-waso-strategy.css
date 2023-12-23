@@ -252,7 +252,7 @@ strong {
   z-index: 9;
   right: 0;
   left: 0;
-  background-color: var(--blue-color);
+  background-color: var(--white-color);
 }
 
 .navbar-brand {
@@ -321,7 +321,7 @@ strong {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background: var(--dark-color);
+  background: var(--lightblue-color);
   transition: background 10ms 300ms ease;
   display: block;
   width: 30px;
@@ -337,7 +337,7 @@ strong {
   position: absolute;
   right: 0;
   left: 0;
-  background: var(--dark-color);
+  background: var(--lightblue-color);
   width: 30px;
   height: 2px;
   content: '';
@@ -483,6 +483,8 @@ strong {
 .logo{
   height: 80px;
   width: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 
