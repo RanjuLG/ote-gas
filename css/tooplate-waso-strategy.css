@@ -321,7 +321,7 @@ strong {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background: var(--lightblue-color);
+  background: var(--blue-color);
   transition: background 10ms 300ms ease;
   display: block;
   width: 30px;
@@ -337,7 +337,7 @@ strong {
   position: absolute;
   right: 0;
   left: 0;
-  background: var(--lightblue-color);
+  background: var(--blue-color);
   width: 30px;
   height: 2px;
   content: '';
@@ -355,6 +355,12 @@ strong {
   color: var(--primary-color);
 }
 
+.logo{
+  height: 80px;
+  width: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
 
 /*---------------------------------------
   SITE HEADER              
@@ -478,15 +484,8 @@ strong {
 .carousel-control-prev-icon {
   width: 70px;
   height: 70px;
+  color: #dc3545 !important;
 }
-
-.logo{
-  height: 80px;
-  width: auto;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
 
 /*---------------------------------------
   ABOUT              
