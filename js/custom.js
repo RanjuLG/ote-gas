@@ -40,3 +40,57 @@
   })(window.jQuery);
 
 
+  document.querySelectorAll('.btn-light').forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Collapse all other panels
+        document.querySelectorAll('.collapse').forEach(function(collapse) {
+            if (collapse.id !== button.getAttribute('data-bs-target').substring(1)) {
+                collapse.classList.remove('show');
+            }
+        });
+    });
+});
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.querySelector(".contact-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                console.log('Response:', response);
+                return response.json();
+            }).then(data => {
+                console.log('Data:', data);
+                if (data.ok) {
+                    // Customize the success message or actions if needed
+                    status.innerHTML = "We appreciate your message and will get back to you as soon as possible.";
+                    // Reset the form
+                    form.reset();
+                } else if (data.hasOwnProperty('errors')) {
+                    // Display individual error messages
+                    status.innerHTML = data.errors.map(error => error.message).join(", ");
+                } else {
+                    status.innerHTML = "Oops! There was a problem submitting your form.";
+                }
+            }).catch(error => {
+                console.error('Error:', error);
+                status.innerHTML = "Oops! There was a problem submitting your form.";
+            });
+        }
+
+        form.addEventListener("submit", handleSubmit);
+    });
+
+
+
+
