@@ -360,7 +360,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background: var(--primary-color);
+  background: var(--orange-color);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -666,7 +666,19 @@ strong {
 
 .google-map {
   border-radius: 20px;
+  width: 100%; /* Make the map width 100% of its container */
+  height: 300px; /* Set an initial height for the map */
+  max-width: 100%; /* Ensure that the map doesn't exceed the width of its container */
+  margin: 0; /* Remove any default margin that might affect responsiveness */
 }
+
+/* Optional: Add media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .google-map {
+    height: 200px; /* Adjust the height for smaller screens if needed */
+  }
+}
+
 
 .contact-icon {
   color: var(--primary-color);
@@ -798,6 +810,50 @@ strong {
   background: var(--orange-color);
   border-color: transparent;
 }
+
+
+/* Additional adjustments for responsiveness */
+@media (max-width: 767px) {
+  .custom-form .input-group {
+    padding-left: 15px;
+  }
+
+  .custom-form .textarea-group label {
+    margin-top: 10px;
+  }
+
+  .custom-form label {
+    margin-right: 5px;
+  }
+
+  .custom-form .form-control {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 575px) {
+  .custom-form .input-group {
+    padding-left: 10px;
+  }
+
+  .custom-form .textarea-group label {
+    margin-top: 8px;
+  }
+
+  .custom-form label {
+    margin-right: 3px;
+    font-size: 12px;
+  }
+
+  .custom-form .form-control {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 12px; /* Further adjust font size for smaller screens */
+  }
+}
+
 
 
 /*---------------------------------------
