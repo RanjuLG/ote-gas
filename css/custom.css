@@ -350,10 +350,10 @@ strong {
 }
 
 .logo{
-  height: 80px;
+  height: 55px;
   width: auto;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 0%;
+  padding-bottom: 1px;
 }
 
 /*---------------------------------------
