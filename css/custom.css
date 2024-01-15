@@ -682,7 +682,12 @@ strong {
 
 .contact-icon {
   color: var(--primary-color);
-  font-size: var(--h5-font-size);
+  font-size: 22px;
+}
+
+.contact-icon-address {
+  color: var(--primary-color);
+  font-size: 20px;
 }
 
 
@@ -811,6 +816,14 @@ strong {
   border-color: transparent;
 }
 
+.contact-info-font-size{
+  font-size: 22px;
+}
+
+.contact-info-font-size-address{
+  font-size: 16px;
+}
+
 
 /* Additional adjustments for responsiveness */
 @media (max-width: 767px) {
@@ -861,9 +874,9 @@ strong {
 -----------------------------------------*/
 
 .site-footer {
-  background: var(--primary-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  background: var(--orange-color);
+  padding-top: 0;
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -915,12 +928,20 @@ strong {
   .projects-thumb-large {
     min-height: 416px;
   }
+
+  .contact-info-font-size{
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 1280px) {
   .contact svg {
     bottom: 0;
     margin-bottom: 0;
+  }
+
+  .contact-info-font-size{
+    font-size: 20px;
   }
 }
 
@@ -1010,6 +1031,10 @@ strong {
     text-align: center;
   }
 
+  .contact-info-font-size{
+    font-size: 18px;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1065,6 +1090,9 @@ strong {
     text-align: center;
   }
 
+  .contact-info-font-size{
+    font-size: 16px;
+  }
   
 }
 
