@@ -92,5 +92,31 @@
     });
 
 
+    document.addEventListener("DOMContentLoaded", function () {
+        let carousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
+            interval: 5000, // Set the interval for automatic sliding (in milliseconds)
+        });
+    
+        // Event listener for when the carousel slides
+        document.getElementById('carouselExampleCaptions').addEventListener('slide.bs.carousel', function (event) {
+            let activeIndex = event.to;
+            updateIndicators(activeIndex);
+        });
+    
+        // Function to update the carousel indicators
+        function updateIndicators(index) {
+            let indicators = document.querySelectorAll('.carousel-indicators li');
+            indicators.forEach((indicator, i) => {
+                if (i === index) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+        }
+    });
+    
+
+
 
 
