@@ -1037,6 +1037,12 @@ strong {
     font-size: 18px;
   }
 
+  .nav-tabs .nav-link {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 15px;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
