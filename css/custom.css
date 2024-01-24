@@ -872,6 +872,10 @@ strong {
   .specialized-services{
     font-size: 16px;
   }
+
+  .specialized-services:hover{
+    font-size: 120%;
+  }
 }
 
 
@@ -956,6 +960,10 @@ strong {
   .specialized-services{
     font-size: 22px;
   }
+
+  .specialized-services:hover{
+    font-size: 120%;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -970,6 +978,10 @@ strong {
 
   .specialized-services{
     font-size: 19px;
+  }
+
+  .specialized-services:hover{
+    font-size: 120%;
   }
 }
 
@@ -1073,6 +1085,10 @@ strong {
     font-size: 18px;
   }
 
+  .specialized-services:hover{
+    font-size: 120%;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1145,6 +1161,10 @@ strong {
 
   .specialized-services{
     font-size: 18px;
+  }
+
+  .specialized-services:hover{
+    font-size: 120%;
   }
 }
 
