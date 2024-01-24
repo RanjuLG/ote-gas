@@ -1106,7 +1106,9 @@ strong {
 
   .carousel-control-next, 
   .carousel-control-prev {
-    bottom: 20px;
+    bottom: 40px;
+    
+    
   }
 
   .nav-tabs .nav-link {
