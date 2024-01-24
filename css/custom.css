@@ -468,6 +468,7 @@ strong {
   top: auto;
   bottom: 50px;
   opacity: 1;
+  max-width: 80px;
 }
 
 .carousel-control-prev {
