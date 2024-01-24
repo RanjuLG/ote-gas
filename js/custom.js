@@ -94,7 +94,7 @@
 
     document.addEventListener("DOMContentLoaded", function () {
         let carousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
-            interval: 5000, // Set the interval for automatic sliding (in milliseconds)
+            interval: 4000, // Set the interval for automatic sliding (in milliseconds)
         });
     
         // Event listener for when the carousel slides
