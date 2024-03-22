@@ -870,11 +870,11 @@ strong {
   }
 
   .specialized-services{
-    font-size: 16px;
+    font-size: 100%;
   }
 
   .specialized-services:hover{
-    font-size: 120%;
+    font-size: 110%;
   }
 }
 
@@ -936,13 +936,13 @@ strong {
 -----------------------------------------*/
 .specialized-services{
   background-color: #f5f5f5; padding-left: 1%; color: rgb(40, 40, 40);
-  font-size: 18px;
+  font-size: 100%;
 }
 
 .specialized-services:hover{
   background-color: var(--orange-color);
   color: var(--blue-color);
-  font-size: 120%;
+  font-size: 110%;
 }
 
 /*---------------------------------------
@@ -958,11 +958,11 @@ strong {
   }
 
   .specialized-services{
-    font-size: 22px;
+    font-size: 100%;
   }
 
   .specialized-services:hover{
-    font-size: 120%;
+    font-size: 110%;
   }
 }
 
@@ -977,11 +977,11 @@ strong {
   }
 
   .specialized-services{
-    font-size: 19px;
+    font-size: 100%;
   }
 
   .specialized-services:hover{
-    font-size: 120%;
+    font-size: 110%;
   }
 }
 
@@ -1082,11 +1082,11 @@ strong {
   }
 
   .specialized-services{
-    font-size: 18px;
+    font-size: 100%;
   }
 
   .specialized-services:hover{
-    font-size: 120%;
+    font-size: 110%;
   }
 
 }
@@ -1151,7 +1151,11 @@ strong {
   }
 
   .specialized-services{
-    font-size: 15px !important;
+    font-size: 100% !important;
+  }
+
+  .specialized-services:hover{
+    font-size: 110%;
   }
  
 }
@@ -1162,11 +1166,11 @@ strong {
   }
 
   .specialized-services{
-    font-size: 18px;
+    font-size: 100%;
   }
 
   .specialized-services:hover{
-    font-size: 120%;
+    font-size: 110%;
   }
 }
 
