@@ -609,7 +609,7 @@ strong {
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 25px 25px 10px 25px;
+  padding: 55px 25px 10px 25px;
   transition: all 0.2s;
 }
 
@@ -620,6 +620,9 @@ strong {
 
 .projects-title {
   color: var(--white-color);
+  font-size:xx-large;
+  padding-bottom: 6%;
+  padding-right: 25%;
 }
 
 .projects-image {
@@ -1170,6 +1173,7 @@ strong {
 }
 
 @media screen and (max-width: 1280px) {
+
   .contact-info-font-size{
     font-size: 15px;
   }
