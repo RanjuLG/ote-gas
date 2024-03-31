@@ -366,13 +366,38 @@ strong {
 }
 
 /*---------------------------------------
+  SLIDE TEXT             
+-----------------------------------------*/
+.slide-text{
+  
+  margin-right: 0%; 
+
+  margin-bottom: 20%; 
+  
+
+  text-shadow: 
+  /*
+  color: var(--orange-color);
+  -1px -1px 0 var(--blue-color),  
+  1px -1px 0 var(--blue-color),
+  -1px  1px 0 var(--blue-color),*/
+  2px  2px 6px var(--blue-color);
+}
+
+---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
+  /* transition: transform 3s ease-out;
+  transform: translateY(0); Start position */
   background: var(--orange-color);
   padding-top: 10px;
   padding-bottom: 10px;
 }
+/*
+.site-header.hidden {
+  transform: translateY(-100%);  End position (upward) 
+}*/
 
 .site-header-icon {
   color: var(--dark-color);
@@ -380,6 +405,17 @@ strong {
 
 .site-header .social-icon {
   text-align: right;
+}
+
+
+.img-responsive {
+  display: none !important; /* Initially hide the image */
+}
+
+@media (max-width: 1200px) and (min-width: 991px) {
+  .img-responsive {
+      display: block !important; /* Display the image when screen width is between 991px and 1200px */
+  }
 }
 
 
@@ -691,6 +727,8 @@ strong {
   .google-map {
     height: 200px; /* Adjust the height for smaller screens if needed */
   }
+
+
 }
 
 
@@ -1154,6 +1192,10 @@ strong {
 
   h5 {
     font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
   }
 
   .contact-icon {
