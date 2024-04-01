@@ -4,7 +4,9 @@ var sectionArray = [1, 2, 3, 4, 5];
 $.each(sectionArray, function(index, value){
           
      $(document).scroll(function(){
-         var offsetSection = $('#' + 'section_' + value).offset().top - 86;
+        var sectionSelector = '#' + 'section_' + value;
+        if ($(sectionSelector).length) { // Check if the element exists
+            var offsetSection = $(sectionSelector).offset().top - 86;
          var docScroll = $(document).scrollTop();
          var docScroll1 = docScroll + 1;
          
@@ -15,6 +17,7 @@ $.each(sectionArray, function(index, value){
              $('.navbar-nav .nav-item .nav-link').eq(index).addClass('active');
              $('.navbar-nav .nav-item .nav-link').eq(index).removeClass('inactive');
          }
+        }
          
      });
     
