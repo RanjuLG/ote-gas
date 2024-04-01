@@ -302,41 +302,8 @@
         <script src="js/magnific-popup-options.js"></script>
         <script src="js/click-scroll-products.js"></script>
         <script src="js/custom.js"></script>
-
-        <script>
-            // Function to get URL parameter by name
-            function getURLParameter(name) {
-                // Get the URL parameters
-                const queryString = window.location.search;
-                const urlParams = new URLSearchParams(queryString);
-                
-                // Return the value of the parameter by name
-                return urlParams.get(name);
-            }
-
-            // Function to scroll to an element by ID
-            function scrollToElement(elementId) {
-                const element = document.getElementById(elementId);
-                if (element) {
-                    element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-                }
-            }
-
-            // Usage example
-            const productValue = getURLParameter('product');
-            console.log('Product:', productValue);
-
-            // Scroll to the element with the ID matching the product value
-            if (productValue) {
-                scrollToElement(productValue);
-            }
-        </script>
-        
     </body>
     <footer class="site-footer py-3">
-
         <p class="copyright-text mb-0 ms-4 me-4" style="font-size: x-small;">Copyright © 2024 O & T Enterprise (Pvt) Ltd</p>
-
-
     </footer>
 </html>

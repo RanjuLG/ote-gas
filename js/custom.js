@@ -117,6 +117,31 @@
     });
     
 
+// Function to get URL parameter by name
+function getURLParameter(name) {
+    // Get the URL parameters
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    
+    // Return the value of the parameter by name
+    return urlParams.get(name);
+}
 
+// Function to scroll to an element by ID
+function scrollToElement(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    }
+}
+
+// Usage example
+const productValue = getURLParameter('product');
+console.log('Product:', productValue);
+
+// Scroll to the element with the ID matching the product value
+if (productValue) {
+    scrollToElement(productValue);
+}
 
 
