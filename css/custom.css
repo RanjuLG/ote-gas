@@ -871,10 +871,13 @@ strong {
 
 .contact-info-font-size{
   font-size: 22px;
+  font-family: 'Grotesk S SH', Arial, sans-serif;
 }
 
 .contact-info-font-size-address{
   font-size: 16px;
+  font-family: 'Grotesk S SH', Arial, sans-serif;
+  font-weight: bolder;
 }
 
 
@@ -1004,7 +1007,7 @@ strong {
   }
 
   .contact-info-font-size{
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .specialized-services{
