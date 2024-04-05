@@ -131,9 +131,15 @@ function getURLParameter(name) {
 function scrollToElement(elementId) {
     const element = document.getElementById(elementId);
     if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        const elementTop = element.getBoundingClientRect().top;
+        window.scrollTo({
+            top: elementTop - 60,
+            behavior: "smooth",
+            inline: "nearest"
+        });
     }
 }
+
 
 // Usage example
 const productValue = getURLParameter('product');
