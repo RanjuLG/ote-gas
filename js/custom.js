@@ -140,6 +140,7 @@ function scrollToElement(elementId) {
     }
 }
 
+
 // Usage example
 const productValue = getURLParameter('product');
 console.log('Product:', productValue);

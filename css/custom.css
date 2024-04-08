@@ -11,7 +11,6 @@
   --primary-color:                #fea62c;
   --secondary-color:              #fea62c;
   --section-bg-color:             #f5f5f5;
-  /* --dark-color:                   #000000; */
   --dark-color:                   #12386A;
   --p-color:                      #717275;
 
@@ -371,16 +370,8 @@ strong {
 .slide-text{
   
   margin-right: 5%; 
-
   margin-bottom: 20%; 
-  
-
   text-shadow: 
-  /*
-  color: var(--orange-color);
-  -1px -1px 0 var(--blue-color),  
-  1px -1px 0 var(--blue-color),
-  -1px  1px 0 var(--blue-color),*/
   2px  2px 6px var(--blue-color);
 }
 
@@ -428,7 +419,7 @@ strong {
 }
 
 .section-hero {
-  background-image: url('../assets/projects/project-details-hero.png');
+  background-image: url('../assets/products/product-details-hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -742,18 +733,6 @@ strong {
   font-size: 20px;
 }
 
-
-/*---------------------------------------
-  CONTACT              
------------------------------------------*/
-/* 
-
-.contact-form {
-  margin-top: 30px;
-  margin-right: 30px;
-}
-*/
-
 .address{
   color: var(--blue-color);
   font-weight: 500;
@@ -783,43 +762,6 @@ strong {
   border-radius: var(--border-radius-medium);
 }
 
-
-/*---------------------------------------
-  CUSTOM FORM               
------------------------------------------*/
-/* .custom-form .form-control {
-  background: transparent;
-  box-shadow: none;
-  border-radius: 0;
-  border: 0;
-  border-bottom: 3px solid var(--section-bg-color);
-  margin-bottom: 24px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  transition: all 0.3s;
-  outline: none;
-}
-
-.custom-form .form-control:hover,
-.custom-form .form-control:focus {
-  background: var(--white-color);
-}
-
-.custom-form button[type="submit"] {
-  background: var(--secondary-color);
-  border-radius: 100px;
-  border: 0;
-  color: var(--white-color);
-  font-weight: var(--font-weight-bold);
-  transition: all 0.3s;
-  margin-bottom: 0;
-}
-
-.custom-form button[type="submit"]:hover,
-.custom-form button[type="submit"]:focus {
-  background: var(--white-color);
-  color: var(--dark-color);
-} */
 .custom-form .input-group {
   color: var(--blue-color);
   background-color: var(--white-color);
