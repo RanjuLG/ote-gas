@@ -284,10 +284,15 @@ strong {
 
 .footer-link{
   color: var(--p-color);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-small);
 }
 .footer-link.active:hover{
   color: var(--orange-color);
+}
+.footer {
+  color: var(--p-color);
+  font-weight: var(--font-weight-small);
+  padding-top: 15px;
 }
 
 .projects-detail-page .navbar-nav .nav-link.active {
@@ -1108,6 +1113,11 @@ strong {
     margin-left: 0;
     padding: 15px;
   }
+  .footer-link{
+    margin-right: 0;
+    margin-left: 0;
+    padding: 15px;
+  }
 
   .specialized-services{
     font-size: 100%;
@@ -1213,5 +1223,21 @@ strong {
     font-size: 110%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .footer-link {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
 
+  .footer {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}
 
+@media only screen and (max-width: 480px) {
+  .footer-link {
+    font-size: 14px; /* Further reduce font size for even smaller screens */
+  }
+  .footer {
+    font-size: 14px; /* Further reduce font size for even smaller screens */
+  }
+}
