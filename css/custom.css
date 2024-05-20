@@ -282,6 +282,14 @@ strong {
   
 }
 
+.footer-link{
+  color: var(--p-color);
+  font-weight: var(--font-weight-medium);
+}
+.footer-link.active:hover{
+  color: var(--orange-color);
+}
+
 .projects-detail-page .navbar-nav .nav-link.active {
   color: var(--p-color);
 
