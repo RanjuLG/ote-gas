@@ -1241,3 +1241,139 @@ strong {
     font-size: 14px; /* Further reduce font size for even smaller screens */
   }
 }
+
+/* Footer styles */
+.footer-link {
+  color: var(--p-color);
+  font-weight: var(--font-weight-small);
+}
+
+.footer-link.active:hover {
+  color: var(--orange-color);
+}
+
+.footer {
+  color: var(--p-color);
+  font-weight: var(--font-weight-small);
+  padding-top: 15px;
+}
+
+/* Responsive footer layout */
+@media (max-width: 991px) {
+  .footer .col-lg-4,
+  .footer .col-lg-2,
+  .footer .col-md-6 {
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .col-sm-12 {
+      text-align: center;
+  }
+}
+
+.logo {
+  height: 55px;
+  width: auto;
+  padding-top: 0;
+  padding-bottom: 1px;
+}
+
+/* General styles */
+body {
+  background: var(--white-color);
+  font-family: var(--body-font-family);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -1px;
+}
+
+p {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+ul li {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+a,
+button {
+  touch-action: manipulation;
+  transition: all 0.3s;
+}
+
+a {
+  color: var(--blue-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 991px) {
+  .footer .col-md-6,
+  .footer .col-md-4,
+  .footer .col-md-2,
+  .footer .col-sm-12 {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .col-sm-12 {
+      text-align: center;
+  }
+}
+
+/* Base font size for copyright text */
+.copyright-text {
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .copyright-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .copyright-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .copyright-text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .copyright-text {
+    font-size: 9px;
+  }
+}
+
