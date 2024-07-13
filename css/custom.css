@@ -1,41 +1,38 @@
-
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --orange-color:                  #fea62c;
-  --lightblue-color:                  #2DA3AB;
-  --blue-color:                  #12386A;
-  --primary-color:                #fea62c;
-  --secondary-color:              #fea62c;
-  --section-bg-color:             #f5f5f5;
-  --dark-color:                   #12386A;
-  --p-color:                      #717275;
+  --white-color: #ffffff;
+  --orange-color: #fea62c;
+  --lightblue-color: #2da3ab;
+  --blue-color: #12386a;
+  --primary-color: #fea62c;
+  --secondary-color: #fea62c;
+  --section-bg-color: #f5f5f5;
+  --dark-color: #12386a;
+  --p-color: #717275;
 
-  --body-font-family:             'DM Sans', sans-serif;
+  --body-font-family: "DM Sans", sans-serif;
 
-  --h1-font-size:                 60px;
-  --h2-font-size:                 42px;
-  --h3-font-size:                 36px;
-  --h4-font-size:                 32px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  18px;
-  --menu-font-size:               14px;
-  --copyright-text-font-size:     16px;
+  --h1-font-size: 60px;
+  --h2-font-size: 42px;
+  --h3-font-size: 36px;
+  --h4-font-size: 32px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --menu-font-size: 14px;
+  --copyright-text-font-size: 16px;
 
-  --font-weight-normal:           400;
-  --font-weight-medium:           500;
-  --font-weight-bold:             700;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 }
 
 body {
-    background: var(--white-color);
-    font-family: var(--body-font-family); 
+  background: var(--white-color);
+  font-family: var(--body-font-family);
 }
-
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -100,7 +97,7 @@ ul li {
   font-weight: var(--font-weight-normal);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -149,7 +146,6 @@ strong {
   text-transform: uppercase;
 }
 
-
 /*---------------------------------------
   CUSTOM ICON               
 -----------------------------------------*/
@@ -193,7 +189,8 @@ strong {
   border-top-color: var(--primary-color);
   border-right-color: var(--primary-color);
   border-bottom-color: var(--primary-color);
-  transition: border-top-color .15s linear,border-right-color .15s linear .1s,border-bottom-color .15s linear .2s;
+  transition: border-top-color 0.15s linear,
+    border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
 }
 
 .custom-icon:hover::after {
@@ -201,7 +198,7 @@ strong {
   border-left-width: 3px;
   border-right-width: 3px;
   transform: rotate(270deg);
-  transition: transform .4s linear 0s,border-left-width 0s linear .35s;
+  transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
 }
 
 .play-icon::before {
@@ -209,14 +206,15 @@ strong {
   left: 1px;
 }
 
-.services-card{
-  font-weight: 102%; font-size:105%; background: linear-gradient(to bottom, #ffb340, #ffb340,#ff9900) !important;
+.services-card {
+  font-weight: 102%;
+  font-size: 105%;
+  background: linear-gradient(to bottom, #ffb340, #ffb340, #ff9900) !important;
 }
 
-.mission-card{
-  background: linear-gradient(to bottom,#ffb340,#ff9900 ) !important;
+.mission-card {
+  background: linear-gradient(to bottom, #ffb340, #ff9900) !important;
 }
-
 
 /*---------------------------------------
   CUSTOM BUTTON               
@@ -243,7 +241,6 @@ strong {
   background: var(--white-color);
   color: var(--dark-color);
 }
-
 
 /*---------------------------------------
   NAVIGATION              
@@ -275,18 +272,17 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover,
 .projects-detail-page .navbar-nav .nav-link.active:hover {
   color: var(--orange-color);
-  
 }
 
-.footer-link{
+.footer-link {
   color: var(--p-color);
   font-weight: var(--font-weight-small);
 }
-.footer-link.active:hover{
+.footer-link.active:hover {
   color: var(--orange-color);
 }
 .footer {
@@ -297,7 +293,6 @@ strong {
 
 .projects-detail-page .navbar-nav .nav-link.active {
   color: var(--p-color);
-
 }
 
 .navbar-toggler {
@@ -323,7 +318,8 @@ strong {
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
   transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease,
+    -webkit-transform 300ms 350ms ease;
   top: 0;
 }
 
@@ -348,14 +344,15 @@ strong {
 .navbar-toggler .navbar-toggler-icon:after {
   transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
   transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease,
+    -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
   left: 0;
   background: var(--blue-color);
   width: 30px;
   height: 2px;
-  content: '';
+  content: "";
 }
 
 .navbar-toggler .navbar-toggler-icon::before {
@@ -370,7 +367,7 @@ strong {
   color: var(--primary-color);
 }
 
-.logo{
+.logo {
   height: 55px;
   width: auto;
   padding-top: 0%;
@@ -380,18 +377,17 @@ strong {
 /*---------------------------------------
   SLIDE TEXT             
 -----------------------------------------*/
-.slide-text{
-  
-  margin-right: 5%; 
-  margin-bottom: 20%; 
-  text-shadow: 
-  2px  2px 6px var(--blue-color);
+.slide-text {
+  margin-right: 5%;
+  margin-bottom: 20%;
+  text-shadow: 2px 2px 6px var(--blue-color);
 }
 
 ---------------------------------------
-  SITE HEADER              
------------------------------------------*/
-.site-header {
+  SITE
+  HEADER
+  -----------------------------------------*/
+  .site-header {
   /* transition: transform 3s ease-out;
   transform: translateY(0); Start position */
   background: --orange-color;
@@ -411,17 +407,15 @@ strong {
   text-align: right;
 }
 
-
 .img-responsive {
   display: none !important; /* Initially hide the image */
 }
 
 @media (max-width: 1200px) and (min-width: 991px) {
   .img-responsive {
-      display: block !important; /* Display the image when screen width is between 991px and 1200px */
+    display: block !important; /* Display the image when screen width is between 991px and 1200px */
   }
 }
-
 
 /*---------------------------------------
   HERO              
@@ -432,7 +426,7 @@ strong {
 }
 
 .section-hero {
-  background-image: url('../assets/products/product-details-hero.jpg');
+  background-image: url("../assets/products/product-details-hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -511,7 +505,7 @@ strong {
   object-fit: cover;
 }
 
-.carousel-control-next, 
+.carousel-control-next,
 .carousel-control-prev {
   top: auto;
   bottom: 50px;
@@ -524,7 +518,7 @@ strong {
   right: 70px;
 }
 
-.carousel-control-next-icon, 
+.carousel-control-next-icon,
 .carousel-control-prev-icon {
   width: 70px;
   height: 70px;
@@ -560,9 +554,7 @@ strong {
   border-radius: 20px;
   margin-bottom: 24px;
   padding: 2%;
-
 }
-
 
 /*---------------------------------------
   SERVICES              
@@ -593,21 +585,20 @@ strong {
   transition: all 0.3s ease-in-out;
 }
 
-.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
-.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   border-left-color: var(--secondary-color);
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .nav-tabs .nav-link.active h3,
-.nav-tabs .nav-link:focus h3, 
+.nav-tabs .nav-link:focus h3,
 .nav-tabs .nav-link:hover h3 {
   color: var(--primary-color);
 }
-
 
 /*---------------------------------------
   PROJECTS              
@@ -627,7 +618,7 @@ strong {
 
 .projects-thumb:hover {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .projects-thumb:hover .projects-image {
@@ -660,7 +651,7 @@ strong {
 
 .projects-title {
   color: var(--white-color);
-  font-size:30px;
+  font-size: 30px;
   padding-bottom: 6%;
   padding-right: 25%;
 }
@@ -699,7 +690,6 @@ strong {
   display: block;
 }
 
-
 /*---------------------------------------
   CONTACT INFO               
 -----------------------------------------*/
@@ -715,7 +705,6 @@ strong {
   margin: 2%;
   height: 600px;
   background-color: var(--section-bg-color);
-  
 }
 
 .google-map {
@@ -726,15 +715,11 @@ strong {
   margin: 0; /* Remove any default margin that might affect responsiveness */
 }
 
-
 @media only screen and (max-width: 600px) {
   .google-map {
     height: 200px; /* Adjust the height for smaller screens if needed */
   }
-
-
 }
-
 
 .contact-icon {
   color: var(--primary-color);
@@ -746,7 +731,7 @@ strong {
   font-size: 20px;
 }
 
-.address{
+.address {
   color: var(--blue-color);
   font-weight: 500;
 }
@@ -763,7 +748,6 @@ strong {
 .contact-form {
   background: var(--section-white-color);
   border-radius: var(--border-radius-medium);
-  
 }
 
 .contact-form label {
@@ -779,7 +763,7 @@ strong {
   color: var(--blue-color);
   background-color: var(--white-color);
   border: 2px solid var(--border-color);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   margin-bottom: 24px;
   padding-left: 20px;
 }
@@ -824,17 +808,16 @@ strong {
   border-color: transparent;
 }
 
-.contact-info-font-size{
+.contact-info-font-size {
   font-size: 22px;
-  font-family: 'Grotesk S SH', Arial, sans-serif;
+  font-family: "Grotesk S SH", Arial, sans-serif;
 }
 
-.contact-info-font-size-address{
+.contact-info-font-size-address {
   font-size: 16px;
-  font-family: 'Grotesk S SH', Arial, sans-serif;
+  font-family: "Grotesk S SH", Arial, sans-serif;
   font-weight: bolder;
 }
-
 
 /* Additional adjustments for responsiveness */
 @media (max-width: 767px) {
@@ -877,16 +860,14 @@ strong {
     font-size: 12px; /* Further adjust font size for smaller screens */
   }
 
-  .specialized-services{
+  .specialized-services {
     font-size: 100%;
   }
 
-  .specialized-services:hover{
+  .specialized-services:hover {
     font-size: 110%;
   }
 }
-
-
 
 /*---------------------------------------
   SITE FOOTER              
@@ -904,8 +885,6 @@ strong {
   font-size: var(--copyright-text-font-size);
   text-align: center;
 }
-
-
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -942,12 +921,14 @@ strong {
 /*---------------------------------------
   specialized services              
 -----------------------------------------*/
-.specialized-services{
-  background-color: #f5f5f5; padding-left: 1%; color: rgb(40, 40, 40);
+.specialized-services {
+  background-color: #f5f5f5;
+  padding-left: 1%;
+  color: rgb(40, 40, 40);
   font-size: 100%;
 }
 
-.specialized-services:hover{
+.specialized-services:hover {
   background-color: var(--orange-color);
   color: var(--blue-color);
   font-size: 110%;
@@ -961,15 +942,15 @@ strong {
     min-height: 416px;
   }
 
-  .contact-info-font-size{
+  .contact-info-font-size {
     font-size: 16px;
   }
 
-  .specialized-services{
+  .specialized-services {
     font-size: 100%;
   }
 
-  .specialized-services:hover{
+  .specialized-services:hover {
     font-size: 110%;
   }
 }
@@ -977,19 +958,15 @@ strong {
 @media screen and (max-width: 1400px) {
   .projects-title {
     color: var(--white-color);
-    font-size:26px;
+    font-size: 26px;
     padding-bottom: 7%;
-
   }
 }
 
 @media screen and (max-width: 1280px) {
-
-
-
   .projects-title {
     color: var(--white-color);
-    font-size:22px;
+    font-size: 22px;
     padding-bottom: 8%;
   }
 
@@ -998,23 +975,22 @@ strong {
     margin-bottom: 0;
   }
 
-  .contact-info-font-size{
+  .contact-info-font-size {
     font-size: 19px;
   }
 
-  .specialized-services{
+  .specialized-services {
     font-size: 100%;
   }
 
-  .specialized-services:hover{
+  .specialized-services:hover {
     font-size: 110%;
   }
 }
 
 @media screen and (max-width: 991px) {
-
   .projects-title {
-    font-size:40px;
+    font-size: 40px;
     padding-bottom: 3%;
     padding-right: 18%;
   }
@@ -1041,6 +1017,14 @@ strong {
 
   h6 {
     font-size: 18px;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+  .footer-link {
+    font-size: 14px !important;
   }
 
   .section-padding {
@@ -1104,7 +1088,7 @@ strong {
     text-align: center;
   }
 
-  .contact-info-font-size{
+  .contact-info-font-size {
     font-size: 18px;
   }
 
@@ -1113,30 +1097,28 @@ strong {
     margin-left: 0;
     padding: 15px;
   }
-  .footer-link{
+  .footer-link {
     margin-right: 0;
     margin-left: 0;
     padding: 15px;
   }
 
-  .specialized-services{
+  .specialized-services {
     font-size: 100%;
   }
 
-  .specialized-services:hover{
+  .specialized-services:hover {
     font-size: 110%;
   }
-
 }
 
 @media screen and (max-width: 480px) {
-
   .projects-title {
-    font-size:30px;
+    font-size: 30px;
     padding-bottom: 3%;
     padding-right: 25%;
   }
-  
+
   h1 {
     font-size: 38px;
   }
@@ -1169,11 +1151,9 @@ strong {
     font-size: 14px;
   }
 
-  .carousel-control-next, 
+  .carousel-control-next,
   .carousel-control-prev {
     bottom: 40px;
-    
-    
   }
 
   .nav-tabs .nav-link {
@@ -1195,31 +1175,29 @@ strong {
     text-align: center;
   }
 
-  .contact-info-font-size{
-    font-size: 12px !important; 
+  .contact-info-font-size {
+    font-size: 12px !important;
   }
 
-  .specialized-services{
+  .specialized-services {
     font-size: 100% !important;
   }
 
-  .specialized-services:hover{
+  .specialized-services:hover {
     font-size: 110%;
   }
- 
 }
 
 @media screen and (max-width: 1280px) {
-
-  .contact-info-font-size{
+  .contact-info-font-size {
     font-size: 15px;
   }
 
-  .specialized-services{
+  .specialized-services {
     font-size: 100%;
   }
 
-  .specialized-services:hover{
+  .specialized-services:hover {
     font-size: 110%;
   }
 }
@@ -1263,13 +1241,13 @@ strong {
   .footer .col-lg-4,
   .footer .col-lg-2,
   .footer .col-md-6 {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 767px) {
   .footer .col-sm-12 {
-      text-align: center;
+    text-align: center;
   }
 }
 
@@ -1337,14 +1315,14 @@ a:hover {
   .footer .col-md-4,
   .footer .col-md-2,
   .footer .col-sm-12 {
-      text-align: center;
-      margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 767px) {
   .footer .col-sm-12 {
-      text-align: center;
+    text-align: center;
   }
 }
 
@@ -1376,4 +1354,3 @@ a:hover {
     font-size: 9px;
   }
 }
-
