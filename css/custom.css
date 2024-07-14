@@ -953,6 +953,10 @@ strong {
   .specialized-services:hover {
     font-size: 110%;
   }
+
+  .circle {
+    margin-right: 3%;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -1341,9 +1345,6 @@ a:hover {
   .copyright-text {
     font-size: 12px;
   }
-  .circle {
-    margin-right: 0%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1366,7 +1367,6 @@ a:hover {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-right: 3%;
 }
 
 .circle:hover {
@@ -1377,4 +1377,10 @@ a:hover {
   width: 18px;
   height: 18px;
   margin-bottom: 15%;
+}
+
+@media (min-width: 991px) {
+  .circle {
+    margin-right: 3%;
+  }
 }
