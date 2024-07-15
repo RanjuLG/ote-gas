@@ -953,6 +953,10 @@ strong {
   .specialized-services:hover {
     font-size: 110%;
   }
+
+  .circle {
+    margin-right: 3%;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -1352,5 +1356,58 @@ a:hover {
 @media (max-width: 576px) {
   .copyright-text {
     font-size: 9px;
+  }
+}
+
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(108, 117, 125, 0.3);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle:hover {
+  background-color: var(--orange-color);
+}
+
+.circle svg {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 15%;
+}
+
+.pl-forlarge {
+  padding-left: 0%;
+}
+
+.pl-forlarge-products {
+  padding-left: 0%;
+}
+
+/* .short-description {
+  font-size: small !important;
+} */
+
+@media (min-width: 991px) {
+  .circle {
+    margin-right: 3%;
+  }
+  .pl-forlarge {
+    padding-left: 5%;
+  }
+  .pl-forlarge-products {
+    padding-left: 2%;
+  }
+  .short-description {
+    font-size: 14px !important;
+  }
+  .footer-titles {
+    margin-top: 10px;
+  }
+  .footer-link {
+    font-size: 16px !important;
   }
 }
